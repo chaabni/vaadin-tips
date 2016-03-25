@@ -14,11 +14,9 @@
     </modules>
 
     <properties>
-        <project.source.version>1.8</project.source.version>
-        <project.target.version>1.8</project.target.version>
         <project.encoding>UTF-8</project.encoding>
 
-        <vaadin.version>7.5.10</vaadin.version>
+        <vaadin.version>7.6.4</vaadin.version>
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
         <vaadin.charts.version>[2.0.0,)</vaadin.charts.version>
 
@@ -71,7 +69,7 @@
             <dependency>
                 <groupId>org.vaadin</groupId>
                 <artifactId>viritin</artifactId>
-                <version>1.33</version>
+                <version>1.49</version>
             </dependency>
 
             <dependency>
@@ -102,7 +100,7 @@
             <dependency>
                 <groupId>com.vaadin</groupId>
                 <artifactId>vaadin-testbench</artifactId>
-                <version>4.0.3</version>
+                <version>4.1.0.alpha2</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
@@ -114,11 +112,10 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.0</version>
+                    <version>3.5.1</version>
                     <configuration>
-                        <encoding>${project.encoding}</encoding>
-                        <source>${project.source.version}</source>
-                        <target>${project.target.version}</target>
+                        <source>1.8</source>
+                        <target>1.8</target>
                     </configuration>
                 </plugin>
             </plugins>
